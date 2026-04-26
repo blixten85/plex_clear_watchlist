@@ -3,7 +3,7 @@ import os
 import sys
 import argparse
 import requests
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 # --- Configuration ---
 PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "")
