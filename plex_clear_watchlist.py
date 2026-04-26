@@ -3,7 +3,6 @@ import os
 import sys
 import argparse
 import requests
-from typing import List, Dict
 
 # --- Configuration ---
 PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "")
@@ -20,7 +19,7 @@ HEADERS = {
 }
 
 # --- Functions ---
-def get_watchlist() -> List[Dict]:
+def get_watchlist() -> list[dict]:
     """Hämta alla items från Plex Watchlist med paginering."""
     items = []
     page = 1
@@ -60,7 +59,7 @@ def delete_from_watchlist(rating_key: str, dry_run: bool = False) -> bool:
         print(f"  ⚠️  Failed to delete {rating_key}: HTTP {response.status_code}", file=sys.stderr)
         return False
 
-def get_item_title(item: Dict) -> str:
+def get_item_title(item: dict) -> str:
     """Hämta titel från ett watchlist-item."""
     return item.get("title", item.get("guid", "Unknown"))
 
