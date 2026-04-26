@@ -9,20 +9,25 @@ Delete all items from your Plex Watchlist via the Plex API.
 
 Get your Plex token from plex.tv → Settings → Account → Security.
 
+## Docker Compose
+
+```bash
+PLEX_TOKEN=your-token docker compose run --rm plex-clear-watchlist --dry-run
+PLEX_TOKEN=your-token docker compose run --rm plex-clear-watchlist
+PLEX_TOKEN=your-token docker compose run --rm plex-clear-watchlist --limit 10
+PLEX_TOKEN=your-token docker compose run --rm plex-clear-watchlist --keep 5
+```
+
+Or put `PLEX_TOKEN=your-token` in a `.env` file and just run:
+
+```bash
+docker compose run --rm plex-clear-watchlist --dry-run
+```
+
 ## Docker
 
 ```bash
-# See what would be deleted
 docker run --rm -e PLEX_TOKEN=your-token ghcr.io/blixten85/plex-clear-watchlist --dry-run
-
-# Delete all
-docker run --rm -e PLEX_TOKEN=your-token ghcr.io/blixten85/plex-clear-watchlist
-
-# Delete max 10 items
-docker run --rm -e PLEX_TOKEN=your-token ghcr.io/blixten85/plex-clear-watchlist --limit 10
-
-# Keep the 5 most recent items
-docker run --rm -e PLEX_TOKEN=your-token ghcr.io/blixten85/plex-clear-watchlist --keep 5
 ```
 
 ## Python
