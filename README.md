@@ -1,6 +1,9 @@
 # Plex Clear Watchlist
 
-![Build](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)
+[![Build](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/blixten85/plex_clear_watchlist)](https://github.com/blixten85/plex_clear_watchlist/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
 
 Delete all items from your Plex Watchlist via the Plex API.
 
