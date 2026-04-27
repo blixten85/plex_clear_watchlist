@@ -1,7 +1,6 @@
-# 🧹 Plex Clear Watchlist
+# Plex Clear Watchlist
 
 ![Build](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/blixten85/plex_clear_watchlist?utm_source=oss&utm_medium=github&utm_campaign=blixten85%2Fplex_clear_watchlist&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
 Delete all items from your Plex Watchlist via the Plex API.
 
