@@ -1,12 +1,12 @@
 # Plex Clear Watchlist
 
-[![Build](https://github.com/API-Apoteket/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)](https://github.com/API-Apoteket/plex_clear_watchlist/actions/workflows/build.yml)
-[![CodeQL](https://github.com/API-Apoteket/plex_clear_watchlist/actions/workflows/codeql.yml/badge.svg)](https://github.com/API-Apoteket/plex_clear_watchlist/actions/workflows/codeql.yml)
-[![Release](https://img.shields.io/github/v/release/API-Apoteket/plex_clear_watchlist)](https://github.com/API-Apoteket/plex_clear_watchlist/releases)
-[![Image](https://ghcr-badge.egpl.dev/api-apoteket/plex-clear-watchlist/size?color=blue&label=image)](https://github.com/API-Apoteket/plex_clear_watchlist/pkgs/container/plex-clear-watchlist)
+[![Build](https://github.com/api-apoteket/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)](https://github.com/api-apoteket/plex_clear_watchlist/actions/workflows/build.yml)
+[![CodeQL](https://github.com/api-apoteket/plex_clear_watchlist/actions/workflows/codeql.yml/badge.svg)](https://github.com/api-apoteket/plex_clear_watchlist/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/api-apoteket/plex_clear_watchlist)](https://github.com/api-apoteket/plex_clear_watchlist/releases)
+[![Image](https://ghcr-badge.egpl.dev/api-apoteket/plex-clear-watchlist/size?color=blue&label=image)](https://github.com/api-apoteket/plex_clear_watchlist/pkgs/container/plex-clear-watchlist)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
-[![CodeRabbit](https://img.shields.io/coderabbit/prs/github/API-Apoteket/plex_clear_watchlist)](https://coderabbit.ai)
+[![CodeRabbit](https://img.shields.io/coderabbit/prs/github/api-apoteket/plex_clear_watchlist)](https://coderabbit.ai)
 ![Downloads](https://img.shields.io/github/downloads/api-apoteket/plex_clear_watchlist/total)
 
 Delete all items from your Plex Watchlist via the Plex API.
