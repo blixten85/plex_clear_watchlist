@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
 [![CodeRabbit](https://img.shields.io/coderabbit/prs/github/API-Apoteket/plex_clear_watchlist)](https://coderabbit.ai)
+![Downloads](https://img.shields.io/github/downloads/api-apoteket/plex_clear_watchlist/total)
 
 Delete all items from your Plex Watchlist via the Plex API.
 
