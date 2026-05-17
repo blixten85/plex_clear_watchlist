@@ -10,7 +10,7 @@
 
 If you discover a security vulnerability, please **do not** open a public issue.
 
-Instead, use [GitHub's private reporting feature](https://github.com/API-Apoteket/plex_clear_watchlist/security/advisories/new) to report it confidentially.
+Instead, use [GitHub's private reporting feature](https://github.com/blixten85/plex_clear_watchlist/security/advisories/new) to report it confidentially.
 
 You should receive a response within 48 hours. If the issue is confirmed, we will release a patch as soon as possible.
 
