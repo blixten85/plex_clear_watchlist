@@ -43,20 +43,17 @@ def get_watchlist() -> list[dict]:
     
     return items
 
-def delete_from_watchlist(rating_key: str, dry_run: bool = False) -> bool:
+def delete_from_watchlist(rating_key: str, title: str = "") -> bool:
     """Ta bort ett item från Watchlist."""
-    if dry_run:
-        print(f"  [DRY RUN] Would delete: {rating_key}")
-        return True
-    
     url = f"{WATCHLIST_URL}/{rating_key}"
     response = requests.delete(url, headers=HEADERS)
-    
-    if response.status_code == 200:
-        print(f"  🗑️  Deleted: {rating_key}")
+
+    label = title or rating_key
+    if response.status_code in (200, 204):
+        print(f"  🗑️  Deleted: {label}")
         return True
     else:
-        print(f"  ⚠️  Failed to delete {rating_key}: HTTP {response.status_code}", file=sys.stderr)
+        print(f"  ⚠️  Failed to delete {label}: HTTP {response.status_code}", file=sys.stderr)
         return False
 
 def get_item_title(item: dict) -> str:
@@ -110,7 +107,7 @@ def main():
             print(f"  [DRY RUN] Would delete: {title}")
             success += 1
         else:
-            if delete_from_watchlist(rating_key):
+            if delete_from_watchlist(rating_key, title):
                 success += 1
             else:
                 failed += 1
