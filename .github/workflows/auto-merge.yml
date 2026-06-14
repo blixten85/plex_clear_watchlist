@@ -2,7 +2,7 @@ name: Bot Auto-Merge
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, closed, ready_for_review]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Fetch Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98  # v3
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -57,36 +57,36 @@ jobs:
 
   claude:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'claude/') && !github.event.pull_request.draft
+    if: startsWith(github.head_ref, 'claude/')
     steps:
       - name: Auto-merge Claude AI PRs once checks pass
         run: |
+          gh pr ready "$PR_URL" || true
           gh pr merge --auto --squash --delete-branch "$PR_URL"
-          gh pr edit "$PR_URL" --add-label "auto-merge"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ github.token }}
 
   codex:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'codex/') && !github.event.pull_request.draft
+    if: startsWith(github.head_ref, 'codex/')
     steps:
       - name: Auto-merge Codex AI PRs once checks pass
         run: |
+          gh pr ready "$PR_URL" || true
           gh pr merge --auto --squash --delete-branch "$PR_URL"
-          gh pr edit "$PR_URL" --add-label "auto-merge"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ github.token }}
 
   copilot:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'copilot/') && !github.event.pull_request.draft
+    if: startsWith(github.head_ref, 'copilot/')
     steps:
       - name: Auto-merge Copilot PRs once checks pass
         run: |
+          gh pr ready "$PR_URL" || true
           gh pr merge --auto --squash --delete-branch "$PR_URL"
-          gh pr edit "$PR_URL" --add-label "auto-merge"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ github.token }}
