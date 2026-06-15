@@ -1,13 +1,11 @@
 # Plex Clear Watchlist
 
-[![Build](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml/badge.svg)](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/build.yml)
-[![CodeQL](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/codeql.yml/badge.svg)](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/codeql.yml)
+[![CI](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/ci.yml/badge.svg)](https://github.com/blixten85/plex_clear_watchlist/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/blixten85/plex_clear_watchlist)](https://github.com/blixten85/plex_clear_watchlist/releases)
 [![Image](https://ghcr-badge.egpl.dev/blixten85/plex-clear-watchlist/size?color=blue&label=image)](https://github.com/blixten85/plex_clear_watchlist/pkgs/container/plex-clear-watchlist)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
 [![CodeRabbit](https://img.shields.io/coderabbit/prs/github/blixten85/plex_clear_watchlist)](https://coderabbit.ai)
-![Downloads](https://img.shields.io/github/downloads/blixten85/plex_clear_watchlist/total)
 
 Delete all items from your Plex Watchlist via the Plex API.
 
