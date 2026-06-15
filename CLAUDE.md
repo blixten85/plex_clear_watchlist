@@ -4,7 +4,7 @@ Deletes all items from a Plex Watchlist via the Plex API. Runs as a one-shot Doc
 
 ## Tech Stack
 
-- Python 3.12
+- Python 3.14
 - Plex API (`PLEX_TOKEN`)
 - Docker / Docker Compose
 
